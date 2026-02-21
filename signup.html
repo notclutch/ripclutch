@@ -70,7 +70,7 @@
         <br>
         <br>
 
-        <label>PHONE NUMBER:</label><br>
+        <label>PHONE NUMBER:(optional)</label><br>
         <input type="tel" name="phone" placeholder="Enter phone number" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" optional maxlength="10">
         <br>
         <br>
@@ -88,7 +88,18 @@
         <br>
         <br>
 
-        <input type="checkbox" name="terms" required onclick="alert('Please agree to the terms and conditions');"> I agree to the terms and conditions
+<details style="color: black;">
+    <summary cursor="pointer">Terms and Conditions</summary>
+    <p style="color: black;">By signing up, you agree to our terms and conditions. Please read them carefully before proceeding.
+        since this is a demo website, there are no actual terms and conditions. However, in a real application, you would include your terms and conditions here for users to review before they sign up.
+        so enjoy the demo website and feel free to explore the recipes on the info page! and we will really appreciate your feedback on the website. thank you for visiting!
+    </p>
+</details >
+<br>
+        <label>
+            <input type="checkbox" name="terms" required>
+            I agree to the terms and conditions
+        
         <br>
         <br>
             </option>
