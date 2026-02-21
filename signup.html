@@ -4,7 +4,48 @@
     <title>Sign Up</title>
 </head>
   <h1 color="black" align="center">SIGN UP FIRST</h1>
-<body style="background-color: blueviolet; color: red;">
+<body style="color: rgb(166, 0, 255); background-image: url('background.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <form action="info.html">
+
+        <center>
+
+        <label>NAME:</label><br>
+        <input type="text" name="name" placeholder="Enter your name" required >
+        <br>
+        <br>
+
+        <label>EMAIL:</label><br>
+        <input type="email" name="email" placeholder="Enter your email" required >
+        <br>
+        <br>
+
+        <label>PASSWORD:</label><br>
+        <input type="password" name="password" placeholder="Enter your password" minlength="6" required onclick="alert('Password must be at least 6 characters long');">
+        <br>
+        <br>
+
+        <label>CONFIRM PASSWORD:</label><br>
+        <input type="password" name="confirm_password" placeholder="Confirm your password" minlength="6" required onclick="alert('Please confirm your password');">
+        <br>
+        <br>
+
+        <label>PHONE NUMBER:<small>(optional)</small></label><br>
+        <input type="tel" name="phone" placeholder="Enter phone number" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" optional maxlength="10">
+        <br>
+        <br>
+
+        <label>SELECT YOUR REGION:</label><br>
+        <select name="region" required>
+            <option value="">Select Region</option>
+            <option>ASIA</option>
+            <option>EUROPE</option>
+            <option>NORTH AMERICA</option>
+            <option>SOUTH AMERICA</option>
+            <option>AFRICA</option>
+            <option>AUSTRALIA</option>
+        </select>
+        <br>
+        <br>
     <form action="info.html">
 
         <center>
