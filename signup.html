@@ -4,8 +4,8 @@
     <title>Sign Up</title>
 </head>
   <h1 color="black" align="center">SIGN UP FIRST</h1>
-<body style="background-color: blueviolet; color: red;">
-    <form action="info.html">
+<body style="color: rgb(166, 0, 255); background-image: url('background.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <form action="content.html" method="post">
 
         <center>
 
@@ -29,7 +29,7 @@
         <br>
         <br>
 
-        <label>PHONE NUMBER:</label><br>
+        <label>PHONE NUMBER:<small>(optional)</small></label><br>
         <input type="tel" name="phone" placeholder="Enter phone number" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" optional maxlength="10">
         <br>
         <br>
@@ -46,18 +46,29 @@
         </select>
         <br>
         <br>
-
-        <input type="checkbox" name="terms" required onclick="alert('Please agree to the terms and conditions');"> I agree to the terms and conditions
+<details style="color: rgb(128, 0, 255);">
+    <summary cursor="pointer">Terms and Conditions</summary>
+    <p style="color: rgb(144, 0, 246);">By signing up, you agree to our terms and conditions. Please read them carefully before proceeding.
+        since this is a demo website, there are no actual terms and conditions. However, in a real application, you would include your terms and conditions here for users to review before they sign up.
+        so enjoy the demo website and feel free to explore the recipes on the info page! and we will really appreciate your feedback on the website. thank you for visiting!
+    </p>
+</details >
+<br>
+        <label>
+            <input type="checkbox" name="terms" required>
+            I agree to the terms and conditions
+        
         <br>
         <br>
+       
             </option>
-        <button type="submit" style="background-color: rgb(255, 255, 255); color: rgb(10, 153, 235); padding: 10px 20px; border: 1px solid black; cursor: pointer;"transition: background-color 0.3s, color 0.3s; onmouseover="this.style.backgroundColor='rgb(10, 153, 235)'; this.style.color='white';" onmouseout="this.style.backgroundColor='rgb(255, 255, 255)'; this.style.color='rgb(10, 153, 235)';">
-            SIGN UP
+        <button type="submit" style="background-color: rgb(0, 0, 0); color: rgb(93, 0, 255); padding: 10px 20px; border: 1px solid black; cursor: pointer; transition: all 0.3s ease-in-out;" onmouseover="this.style.backgroundColor='rgb(93, 0, 255)'; this.style.color='white';" onmouseout="this.style.backgroundColor='rgb(0, 0, 0)'; this.style.color='rgb(93, 0, 255)';">
+            SIGN Up
         </button>
 
         </center>
 
     </form>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </body>
 </html>
